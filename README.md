@@ -1,5 +1,8 @@
-# Experiment--03-Half-Subtractor-and-Full-subtractor
-## Implementation-of-Half-subtractor-and-Full-subtractor-circuit
+### NAME:DIVYA K
+### REGISTER NUMBER:212222230035
+
+# Experiment 04 Half Subtractor and Full subtractor
+## Implementation of Half subtractor and Full subtractor circuit
 ## AIM:
 To design a half subtractor and full subtractor circuit and verify its truth table in Quartus using Verilog programming.
 
@@ -26,17 +29,29 @@ A full subtractor is a combinational circuit that performs subtraction involving
 Diff = A ⊕ B ⊕ Bin B = A'Bin + A'B + BBin
 
 ## Procedure
-
-
-
-Write the detailed procedure here 
+#### 1.Use module projname(input,output) to start the Verilog programmming.
+#### 2.Assign inputs and outputs using the word input and output respectively.
+#### 3.Use defined keywords like wire,assign and required logic gates to represent the boolean expression.
+#### 4.Use each output to represnt onre for differnce and the other for borrow.
+#### 5.End the verilog program using keyword endmodule
 
 
 ## Program:
 ```
 Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:
+Developed by: DIVYA K
+RegisterNumber:212222230035
+```
+```
+
+module exo4(A,B,diff,borrow);
+input A,B; output diff,borrow;
+wire X;
+xor(diff,A,B);
+not(X,A);
+and(borrow,X,B);
+endmodule
+
 ```
 ```
 module fullsub(A,B,bin,diff,borrow);
@@ -46,46 +61,25 @@ assign diff = A^B^bin;
 assign borrow =(~A&B)|(~(A^B))&bin;
 endmodule
 ```
-## Output:
+
 
 ## Truthtable
 
 
+.![167161887-f0590beb-3f4e-43ed-8a68-8c072a46fb81](https://github.com/divyakumars/Experiment--04-Half-Subtractor-and-Full-subtractor/assets/119393621/8c4746dc-7059-421b-81bd-37a679cfe19d)
+
+![167162027-0c5225fb-1400-4d6a-9f16-18bbf6789916](https://github.com/divyakumars/Experiment--04-Half-Subtractor-and-Full-subtractor/assets/119393621/c491837e-8e1d-4171-a570-19f8905e0c58)
 
 ##  RTL diagram
-
-
-
-
-
-
-
-
-
+![RTL](https://github.com/divyakumars/Experiment--04-Half-Subtractor-and-Full-subtractor/assets/119393621/1ae42980-1661-4b03-8c2b-f873eee49582)
 
 ![image](https://github.com/divyakumars/Experiment--04-Half-Subtractor-and-Full-subtractor/assets/119393621/b8922232-c142-420b-ac15-5c5cffc5a214)
 
 
 
+## output waveform
 
-
-
-## Timing diagram 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![image](https://github.com/divyakumars/Experiment--04-Half-Subtractor-and-Full-subtractor/assets/119393621/7a8b57e1-d724-4614-81f3-306f4e484793)
 
 
 
@@ -94,3 +88,4 @@ endmodule
 
 ## Result:
 Thus the half subtractor and full subtractor circuits are designed and the truth tables is verified using quartus software.
+
