@@ -1,5 +1,5 @@
-NAME:DIVYA K
-REGISTER NUMBER:212222230035
+### NAME:DIVYA K
+### REGISTER NUMBER:212222230035
 
 # Experiment 04 Half Subtractor and Full subtractor
 ## Implementation of Half subtractor and Full subtractor circuit
